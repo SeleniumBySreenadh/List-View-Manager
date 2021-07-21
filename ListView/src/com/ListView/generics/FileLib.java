@@ -17,7 +17,7 @@ public class FileLib {
 		 * @throws IOException
 		 */
 		public  String getPropertyValue(String key) throws IOException {
-			 FileInputStream fis=new FileInputStream("C:\\Users\\This pc\\Desktop\\ListViewAutomation.xlsx");
+			 FileInputStream fis=new FileInputStream("./data/ListViewAutomation.xlsx");
 			 Properties p=new Properties();
 			 p.load(fis);
 			 String value = p.getProperty(key);
@@ -33,7 +33,7 @@ public class FileLib {
 		 * @throws IOException
 		 */
 		public String getExcelValue(String sheetname,int row,int cell) throws EncryptedDocumentException, IOException {
-			  FileInputStream fis=new FileInputStream("C:\\Users\\This pc\\Desktop\\ListViewAutomation.xlsx");
+			  FileInputStream fis=new FileInputStream("./data/ListViewAutomation.xlsx");
 			  Workbook wb = WorkbookFactory.create(fis);
 			  String value = wb.getSheet(sheetname).getRow(row).getCell(cell).getStringCellValue();
 			  return value;
