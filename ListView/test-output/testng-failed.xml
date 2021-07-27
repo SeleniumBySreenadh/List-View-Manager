@@ -9,8 +9,7 @@
           <include name="SignUp"/>
           <include name="CreateCRM"/>
           <include name="openBrowser"/>
-          <include name="login"/>
-          <include name="crm"/>
+          <include name="CreateContactCRM"/>
         </methods>
       </class> <!-- com.testScript.Testing -->
     </classes>

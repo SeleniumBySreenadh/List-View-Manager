@@ -56,6 +56,7 @@ public class ListViewBaseClass {
 		
 		String email = f.getExcelValue("Xpath", 3, 2);
 		String password = f.getExcelValue("Xpath", 4 ,2); 
+		System.out.println("pswd is "+ password);
 		
 		//SignUpPage Object is Created to call signIn()
 		LoginPage singup = new LoginPage();	
